@@ -1,0 +1,120 @@
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 60px 15px 45px;
+}
+
+/* MAIN CONTAINERS */
+.daniel-container, .nathan-container, .jean-container, .patrick-container, .kira-container{
+    padding: 25px 35px 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.daniel-container{
+    background-color: hsl(263, 55%, 52%);
+}
+.nathan-container{
+    background-color: hsl(217, 19%, 35%);
+}
+.jean-container{
+    background-color: white;
+}
+.patrick-container{
+    background-color: hsl(219, 29%, 14%);
+}
+.kira-container{
+    background-color: white;
+}
+
+/* SUB CONTAINERS */
+.name-space{
+    display: flex; 
+}
+
+/* IMAGES */
+.profile-img{
+    margin-right: 15px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid hsl(0, 0%, 81%, 0.5);
+}
+.kira-container .profile-img, .jean-container .profile-img, .nathan-container .profile-img{
+    border: 0;
+    width: 32px;
+    height: 33px;
+}
+.patrick-container .profile-img{
+    border-color: hsl(263, 55%, 52%);
+}
+
+/* QUOTATION MARK */
+#quotation{
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+
+/* HEADINGS AND PARAGRAPHS */
+h1{
+    position: relative;
+    color: hsl(0, 0%, 81%);
+    font-size: 20px;
+}
+.kira-container h1, .kira-container p, .kira-container h3, .jean-container h1, .jean-container p, .jean-container h3{
+    color: hsl(217, 19%, 35%);
+}
+.name-title p{
+    margin: 0;
+    opacity: 50%;
+}
+.name-title h3{
+    margin: 0;
+}
+p{
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+    font-size: 12px;
+}
+h3{
+    color: hsl(0, 0%, 81%);
+    font-size: 14px;
+}
+
+@media (min-width: 950px){
+    body{
+        padding: 0;
+    }
+    .main{
+        display: flex;
+        padding: 150px 200px;
+    }
+    .left-main{
+        width: 80%;
+        margin-right: 30px;
+    }
+    .right-main{
+        width: 20%;
+        height: 100%;
+    }
+    .top-left{
+        display: flex;
+        
+    }
+    .bottom-left{
+        display: flex;
+    }
+    .daniel-container, .jean-container{
+        margin-right: 30px;
+    }
+    .kira-container{
+        height: 100%;
+        padding-bottom: 17px;
+        margin-bottom: 0;
+    }
+    #quotation{
+        position: absolute;
+        right: 54%;
+        top: 158px;
+    }
+}
